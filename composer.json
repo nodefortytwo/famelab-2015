@@ -1,0 +1,14 @@
+{
+    "name": "nodefortytwo/famelab",
+    "description": "simple content management for famelab",
+    "authors": [
+        {
+            "name": "Rick Burgess",
+            "email": "nodefortytwo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "erusev/parsedown": "dev-master"
+    }
+}
