@@ -62,7 +62,7 @@ function get_menu($url){
 		$path = $info->getPathname();
 		$path = str_replace($content_dir, '', $path);
 		$path = str_replace(['index.html', '.html'], '', $path);
-		if(substr($path, -1) == '.' || substr($path, 0,1) == '_' || empty($path)){
+		if(substr($path, -1) == '.' || substr($path, 0,1) == '_' || substr($path, 0,1) == '.' || empty($path)){
 			continue;
 		}
 
