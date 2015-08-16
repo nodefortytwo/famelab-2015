@@ -23,7 +23,11 @@ $content = file_get_contents($file);
 $parsedown = Parsedown::instance();
 $parsedown->setBreaksEnabled(true);
 
-$content = ['body' => $parsedown->text($content), 'nav' => render_menu(get_menu($url))];
+$content = ['body' => $parsedown->text($content)];
+
+if($response_code != 400){
+	$content['nav'] = render_menu(get_menu($url));
+}
 
 
 $template = file_get_contents(__DIR__ . '/templates/index.html');

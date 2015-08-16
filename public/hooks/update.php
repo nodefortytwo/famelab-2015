@@ -1,2 +1,2 @@
 <?php
-exec('cd ' . __DIR__ . ' && git submodule update');
+exec('cd ' . __DIR__ . ' && git submodule update --remote');
